@@ -16,11 +16,18 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+WINNING_BOARD = ["X","X","X"," "," "," "," "," "," "]
+LOSING BOARD = [" "," "," "," "," "," "," "," "," "]
+
 
 def won?(board)
   WIN_COMBINATIONS.each do |condition|
+    puts condition
     if [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"}
       return condition
     end
     end
 end
+
+won?(WINNING_BOARD)
+
