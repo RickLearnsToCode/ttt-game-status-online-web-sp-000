@@ -23,10 +23,13 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |condition|
     #if [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"}
+    won = false
     if [board[condition[0]],board[condition[1]], board[condition[2]]] == ["X","X","X"] || [board[condition[0]],board[condition[1]], board[condition[2]]] == ["O","O","O"]
-      return condition
+      won = true
+      return condition      
       end
     end
+    won == false ? return nil :
 end
 
 #won?(WINNING_BOARD)
