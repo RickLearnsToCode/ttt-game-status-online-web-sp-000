@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-WINNING_BOARD = ["X","X","X"," "," "," "," "," "," "]
+WINNING_BOARD = [" "," "," ","X","X","X"," "," "," "]
 LOSING_BOARD = [" "," "," "," "," "," "," "," "," "]
 
 
