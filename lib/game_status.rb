@@ -16,8 +16,8 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-WINNING_BOARD = [" "," "," ","X","X","X"," "," "," "]
-LOSING_BOARD = [" "," "," "," "," "," "," "," "," "]
+#WINNING_BOARD = [" "," "," ","X","X","X"," "," "," "]
+#LOSING_BOARD = [" "," "," "," "," "," "," "," "," "]
 
 
 def won?(board)
@@ -31,4 +31,4 @@ def won?(board)
     return nil
 end
 
-won?(WINNING_BOARD)
+#won?(WINNING_BOARD)
