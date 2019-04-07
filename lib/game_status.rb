@@ -23,7 +23,7 @@ def won?(board)
     first_square = board[condition[0]]
     second_square = board[condition[1]]
     third_square = board[condition[2]]
-    [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"} ? won = true : 
+    [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"} ? won = true :
   end
   return won
 end
