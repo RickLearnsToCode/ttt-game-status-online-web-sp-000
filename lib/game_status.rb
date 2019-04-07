@@ -31,4 +31,4 @@ def won?(board)
     return nil
 end
 
-won?(LOSING_BOARD)
+won?(WINNING_BOARD)
