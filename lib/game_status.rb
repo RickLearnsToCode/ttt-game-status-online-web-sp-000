@@ -27,7 +27,7 @@ def won?(board)
       return condition
       end
     end
-    return nil
+    return false
 end
 
 #won?(WINNING_BOARD)
