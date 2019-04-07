@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 WINNING_BOARD = ["X","X","X"," "," "," "," "," "," "]
-LOSING BOARD = [" "," "," "," "," "," "," "," "," "]
+LOSING_BOARD = [" "," "," "," "," "," "," "," "," "]
 
 
 def won?(board)
