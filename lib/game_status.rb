@@ -15,3 +15,15 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
+
+def won?(board)
+  won = false
+  WIN_COMBINATIONS.each do |condition|
+    first_square = board[condition[0]]
+    second_square = board[condition[1]]
+    third_square = board[condition[2]]
+    [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"} ? won = true : 
+  end
+  return won
+end
