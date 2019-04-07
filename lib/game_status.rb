@@ -22,9 +22,9 @@ LOSING_BOARD = [" "," "," "," "," "," "," "," "," "]
 
 def won?(board)
   WIN_COMBINATIONS.each do |condition|
-    puts condition.to_array
+    puts condition.to_ary
     if [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"}
-      return condition.to_array
+      return condition.to_ary
 
     end
     end
