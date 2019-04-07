@@ -25,7 +25,8 @@ def won?(board)
     puts [condition[0],condition[1],condition[2]]
     puts [board[condition[0]],board[condition[1]],board[condition[2]]]
     if [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"}
-      return [condition[0],condition[1],condition[2]]
+      value =  [condition[0],condition[1],condition[2]]
+      return value
     end
     end
     return nil
