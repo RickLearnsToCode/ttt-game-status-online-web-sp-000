@@ -27,6 +27,7 @@ def won?(board)
       return [condition[0],condition[1],condition[2]]
     end
     end
+    return nil
 end
 
 won?(LOSING_BOARD)
