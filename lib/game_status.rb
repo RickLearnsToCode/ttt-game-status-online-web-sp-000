@@ -22,11 +22,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |condition|
-    puts [condition[0],condition[1],condition[2]]
-    puts [board[condition[0]],board[condition[1]],board[condition[2]]]
     if [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"}
-      value =  [condition[0],condition[1],condition[2]]
-      return value
+      return condition
     end
     end
     return nil
