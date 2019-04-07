@@ -29,4 +29,4 @@ def won?(board)
     end
 end
 
-won?(WINNING_BOARD)
+won?(LOSING_BOARD)
