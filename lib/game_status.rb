@@ -31,3 +31,7 @@ def won?(board)
 end
 
 #won?(WINNING_BOARD)
+
+def full?(board)
+  !board.any?(" " || nil) 
+end
