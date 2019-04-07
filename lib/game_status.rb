@@ -35,3 +35,7 @@ end
 def full?(board)
   !board.any?(" " || nil)
 end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
