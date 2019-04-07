@@ -23,5 +23,5 @@ def won?(board)
     [board[condition[0]],board[condition[1]], board[condition[2]]].all? {|i| i == "X" || i == "Y"} ? won = true : next
     won = true ? return condition : next
   end
-  
+
 end
